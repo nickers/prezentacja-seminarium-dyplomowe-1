@@ -1,0 +1,689 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Projekt i implementacja rozproszonego rejestru menedżerów zarządczych dla
+ systemów SOA ze wsparciem dla samo-konfiguracji 
+\end_layout
+
+\begin_layout Subtitle
+promotor: doc.
+\begin_inset space ~
+\end_inset
+
+dr inż.
+\begin_inset space ~
+\end_inset
+
+Michał Sajkowski
+\end_layout
+
+\begin_layout Author
+Tomasz Wsuł
+\end_layout
+
+\begin_layout Date
+16.03.2011
+\end_layout
+
+\begin_layout BeginFrame
+SOA
+\end_layout
+
+\begin_layout Standard
+SOA (ang.
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+Services Oriented Architecture
+\emph default
+) --- architektura zorientowana na usługi.
+ Podstawowe cechy:
+\end_layout
+
+\begin_layout Itemize
+architektura rozproszona,
+\end_layout
+
+\begin_layout Itemize
+duża modularność kodu (aplikację tworzy się pisząc pojedyncze usługi),
+\end_layout
+
+\begin_layout Itemize
+duża reużywalność kodu (brak silnych powiązań między usługami),
+\end_layout
+
+\begin_layout Itemize
+możliwość łączenia wielu technologii (sprzętowych, programowych).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Znaczenie monitorowania
+\end_layout
+
+\begin_layout Standard
+Znaczenie monitorowania aplikacji SOA:
+\end_layout
+
+\begin_layout Itemize
+dostarczanie informacji o ogólnej kondycji systemu,
+\end_layout
+
+\begin_layout Itemize
+możliwość poprawy parametrów pracy aplikacji,
+\end_layout
+
+\begin_layout Itemize
+testowanie i debugowanie aplikacji (monitorowanie funkcjonalne),
+\end_layout
+
+\begin_layout Itemize
+wykrywanie awarii,
+\end_layout
+
+\begin_layout Itemize
+dostarczanie danych do zarządzania (np.
+ równoważenie obciążenia przez inteligentny przydział pracy).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+Środowisko pracy systemu
+\end_layout
+
+\begin_layout Standard
+<rysunek z magisterki>
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+identyczne agenty,
+\end_layout
+
+\begin_layout Itemize
+połączone w
+\begin_inset space ~
+\end_inset
+
+graf acykliczny,
+\end_layout
+
+\begin_layout Itemize
+duża autonomiczność agentów,
+\end_layout
+
+\begin_layout Itemize
+ciche założenie czasu globalnego.
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+autodetekcja zasobów
+\end_layout
+
+\begin_layout Itemize
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem,
+\end_layout
+
+\begin_layout Itemize
+wielowątkowe przetwarzanie zdarzeniowe,
+\end_layout
+
+\begin_layout Itemize
+możliwa rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color green
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+połączone w
+\begin_inset space ~
+\end_inset
+
+graf acykliczny,
+\end_layout
+
+\begin_layout Itemize
+duża autonomiczność agentów,
+\end_layout
+
+\begin_layout Itemize
+ciche założenie czasu globalnego.
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+autodetekcja zasobów
+\end_layout
+
+\begin_layout Itemize
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem,
+\end_layout
+
+\begin_layout Itemize
+wielowątkowe przetwarzanie zdarzeniowe,
+\end_layout
+
+\begin_layout Itemize
+możliwa rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color green
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+, ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+duża autonomiczność agentów,
+\end_layout
+
+\begin_layout Itemize
+ciche założenie czasu globalnego.
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+autodetekcja zasobów
+\end_layout
+
+\begin_layout Itemize
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem,
+\end_layout
+
+\begin_layout Itemize
+wielowątkowe przetwarzanie zdarzeniowe,
+\end_layout
+
+\begin_layout Itemize
+możliwa rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color green
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+...autonomiczność..., problemy z
+\begin_inset space ~
+\end_inset
+
+podejmowaniem i
+\begin_inset space ~
+\end_inset
+
+przekazywanie decyzji
+\end_layout
+
+\begin_layout Itemize
+ciche założenie czasu globalnego.
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+autodetekcja zasobów
+\end_layout
+
+\begin_layout Itemize
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem,
+\end_layout
+
+\begin_layout Itemize
+wielowątkowe przetwarzanie zdarzeniowe,
+\end_layout
+
+\begin_layout Itemize
+możliwa rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color green
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+...autonomiczność..., problemy z
+\begin_inset space ~
+\end_inset
+
+podejmowaniem i
+\begin_inset space ~
+\end_inset
+
+przekazywanie decyzji
+\end_layout
+
+\begin_layout Itemize
+ciche założenie czasu globalnego.
+ niespójności w
+\begin_inset space ~
+\end_inset
+
+pomiarach
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem,
+\end_layout
+
+\begin_layout Itemize
+wielowątkowe przetwarzanie zdarzeniowe,
+\end_layout
+
+\begin_layout Itemize
+możliwa rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color green
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+...autonomiczność..., problemy z
+\begin_inset space ~
+\end_inset
+
+podejmowaniem i
+\begin_inset space ~
+\end_inset
+
+przekazywanie decyzji
+\end_layout
+
+\begin_layout Itemize
+ciche założenie czasu globalnego.
+ niespójności w
+\begin_inset space ~
+\end_inset
+
+pomiarach
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+autodetekcja zasobów
+\end_layout
+
+\begin_layout Itemize
+budowa modułowa..., aktualizacja --- na każdym węźle ręcznie
+\end_layout
+
+\begin_layout Itemize
+wielowątkowe przetwarzanie zdarzeniowe,
+\end_layout
+
+\begin_layout Itemize
+możliwa rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color green
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+...autonomiczność..., problemy z
+\begin_inset space ~
+\end_inset
+
+podejmowaniem i
+\begin_inset space ~
+\end_inset
+
+przekazywanie decyzji
+\end_layout
+
+\begin_layout Itemize
+ciche założenie czasu globalnego.
+ niespójności w
+\begin_inset space ~
+\end_inset
+
+pomiarach
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+autodetekcja zasobów
+\end_layout
+
+\begin_layout Itemize
+budowa modułowa..., aktualizacja --- na każdym węźle ręcznie
+\end_layout
+
+\begin_layout Itemize
+wielowątkowe przetwarzanie zdarzeniowe,
+\end_layout
+
+\begin_layout Itemize
+możliwa rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document
