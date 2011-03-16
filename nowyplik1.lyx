@@ -179,6 +179,10 @@ System:
 \end_layout
 
 \begin_layout Itemize
+usługi REST-owe
+\end_layout
+
+\begin_layout Itemize
 identyczne agenty,
 \end_layout
 
@@ -220,6 +224,38 @@ rekonfiguracja w
 \end_inset
 
 trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - technologie
+\end_layout
+
+\begin_layout Standard
+Istotne technologie użyte w
+\begin_inset space ~
+\end_inset
+
+systemie:
+\end_layout
+
+\begin_layout Itemize
+platforma: Java,OSGi,
+\end_layout
+
+\begin_layout Itemize
+format dokumentacji: lyx,
+\end_layout
+
+\begin_layout Itemize
+wspierane IDE: Eclipse,
+\end_layout
+
+\begin_layout Itemize
+repozytorium kodu: SVN.
 \end_layout
 
 \begin_layout EndFrame
@@ -1291,16 +1327,164 @@ Rozwiązania
 Repozytorium pluginów:
 \end_layout
 
-\begin_layout Standard
-rozwiązywania zależności między pluginami
+\begin_layout Itemize
+dystrybucja pluginów w
+\begin_inset space ~
+\end_inset
+
+systemie,
+\end_layout
+
+\begin_layout Itemize
+wpieranie rozwiązywania zależności między pluginami,
+\end_layout
+
+\begin_layout Itemize
+powiązanie monitorowanych elementów z
+\begin_inset space ~
+\end_inset
+
+pluginami,
+\end_layout
+
+\begin_layout Itemize
+ułatwianie aktualizacji pluginów.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Rozwiązania
 \end_layout
 
 \begin_layout Standard
-wspomaganie aktualizacji
+Rejestr agentów:
+\end_layout
+
+\begin_layout Itemize
+rejestrowanie/wyrejestrowywanie agentów,
+\end_layout
+
+\begin_layout Itemize
+wspomaganie śledzenia stanu agentów (uruchomione pluginy),
+\end_layout
+
+\begin_layout Itemize
+udostępniane akcje (np.
+ migracja maszyny wirtualnej),
+\end_layout
+
+\begin_layout Itemize
+heartbit.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Rozwiązania
 \end_layout
 
 \begin_layout Standard
+Graf systemu:
+\end_layout
 
+\begin_layout Itemize
+węzły --- wskazanie usługi/zasobu + metadane,
+\end_layout
+
+\begin_layout Itemize
+łuki --- zależności między usługami,
+\end_layout
+
+\begin_layout Itemize
+historia --- umożliwia analizę 
+\emph on
+post-mortem,
+\end_layout
+
+\begin_layout Itemize
+brak gwarancji spójności --- system też nie musi być spójny (wiszące łuki).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Wybrane technologie
+\end_layout
+
+\begin_layout Itemize
+platforma: Java, OSGi,
+\end_layout
+
+\begin_layout Itemize
+format dokumentacji: lyx,
+\end_layout
+
+\begin_layout Itemize
+wspierane IDE: Eclipse,
+\end_layout
+
+\begin_layout Itemize
+repozytorium kodu: SVN+git (plugin git-svn),
+\end_layout
+
+\begin_layout Itemize
+baza danych: MongoDB --- dokumentowa baza danych,
+\end_layout
+
+\begin_layout Itemize
+api: REST + XML.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Artefakty
+\end_layout
+
+\begin_layout Itemize
+koncepcja rejestru menedżerów zarządczych ze wsparciem dla samo-konfiguracji,
+\end_layout
+
+\begin_layout Itemize
+implementacja rejestru,
+\end_layout
+
+\begin_layout Itemize
+proste GUI dla użytkownika pozwalające na przeglądanie rejestru (przeglądarka
+ WWW+XSLT+JavaScript),
+\end_layout
+
+\begin_layout Itemize
+pełna dokumentacja JavaDoc,
+\end_layout
+
+\begin_layout Itemize
+dokumentacja techniczna w
+\begin_inset space ~
+\end_inset
+
+formie pracy magisterskiej.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Koniec
+\end_layout
+
+\begin_layout Standard
+Pytania?
 \end_layout
 
 \begin_layout EndFrame
