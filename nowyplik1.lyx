@@ -158,12 +158,49 @@ dostarczanie danych do zarządzania (np.
 
 \end_layout
 
-\begin_layout Standard
-Środowisko pracy systemu
+\begin_layout BeginFrame
+Schemat ideowy zastanego systemu
 \end_layout
 
 \begin_layout Standard
-<rysunek z magisterki>
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename stan_zastany-pogladowo.dia
+	width 80col%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Schemat ideowy systemu monitorowania
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout EndFrame
