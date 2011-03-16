@@ -191,11 +191,7 @@ graf acykliczny,
 \end_layout
 
 \begin_layout Itemize
-duża autonomiczność agentów,
-\end_layout
-
-\begin_layout Itemize
-ciche założenie czasu globalnego.
+duża autonomiczność agentów.
 \end_layout
 
 \begin_layout Standard
@@ -215,11 +211,11 @@ malutkim rdzeniem,
 \end_layout
 
 \begin_layout Itemize
-wielowątkowe przetwarzanie zdarzeniowe,
+automatyczne ładowanie pluginów,
 \end_layout
 
 \begin_layout Itemize
-możliwa rekonfiguracja w
+rekonfiguracja w
 \begin_inset space ~
 \end_inset
 
@@ -244,7 +240,7 @@ System:
 identyczne agenty
 \strikeout default
 , 
-\color green
+\color red
 trudne aktualizacje i
 \begin_inset space ~
 \end_inset
@@ -261,11 +257,7 @@ graf acykliczny,
 \end_layout
 
 \begin_layout Itemize
-duża autonomiczność agentów,
-\end_layout
-
-\begin_layout Itemize
-ciche założenie czasu globalnego.
+duża autonomiczność agentów.
 \end_layout
 
 \begin_layout Standard
@@ -285,11 +277,11 @@ malutkim rdzeniem,
 \end_layout
 
 \begin_layout Itemize
-wielowątkowe przetwarzanie zdarzeniowe,
+automatyczne ładowanie pluginów,
 \end_layout
 
 \begin_layout Itemize
-możliwa rekonfiguracja w
+rekonfiguracja w
 \begin_inset space ~
 \end_inset
 
@@ -314,7 +306,7 @@ System:
 identyczne agenty
 \strikeout default
 , 
-\color green
+\color red
 trudne aktualizacje i
 \begin_inset space ~
 \end_inset
@@ -327,15 +319,13 @@ zmiany
 \strikeout on
 połączone
 \strikeout default
-, ręczna konfiguracja każdego węzła
+, 
+\color red
+ręczna konfiguracja każdego węzła
 \end_layout
 
 \begin_layout Itemize
-duża autonomiczność agentów,
-\end_layout
-
-\begin_layout Itemize
-ciche założenie czasu globalnego.
+duża autonomiczność agentów.
 \end_layout
 
 \begin_layout Standard
@@ -355,11 +345,11 @@ malutkim rdzeniem,
 \end_layout
 
 \begin_layout Itemize
-wielowątkowe przetwarzanie zdarzeniowe,
+automatyczne ładowanie pluginów,
 \end_layout
 
 \begin_layout Itemize
-możliwa rekonfiguracja w
+rekonfiguracja w
 \begin_inset space ~
 \end_inset
 
@@ -384,7 +374,7 @@ System:
 identyczne agenty
 \strikeout default
 , 
-\color green
+\color red
 trudne aktualizacje i
 \begin_inset space ~
 \end_inset
@@ -397,11 +387,20 @@ zmiany
 \strikeout on
 połączone
 \strikeout default
-..., ręczna konfiguracja każdego węzła
+..., 
+\color red
+ręczna konfiguracja każdego węzła
 \end_layout
 
 \begin_layout Itemize
-...autonomiczność..., problemy z
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color red
+problemy z
 \begin_inset space ~
 \end_inset
 
@@ -410,10 +409,6 @@ podejmowaniem i
 \end_inset
 
 przekazywanie decyzji
-\end_layout
-
-\begin_layout Itemize
-ciche założenie czasu globalnego.
 \end_layout
 
 \begin_layout Standard
@@ -433,11 +428,11 @@ malutkim rdzeniem,
 \end_layout
 
 \begin_layout Itemize
-wielowątkowe przetwarzanie zdarzeniowe,
+automatyczne ładowanie pluginów,
 \end_layout
 
 \begin_layout Itemize
-możliwa rekonfiguracja w
+rekonfiguracja w
 \begin_inset space ~
 \end_inset
 
@@ -462,7 +457,7 @@ System:
 identyczne agenty
 \strikeout default
 , 
-\color green
+\color red
 trudne aktualizacje i
 \begin_inset space ~
 \end_inset
@@ -475,11 +470,20 @@ zmiany
 \strikeout on
 połączone
 \strikeout default
-..., ręczna konfiguracja każdego węzła
+..., 
+\color red
+ręczna konfiguracja każdego węzła
 \end_layout
 
 \begin_layout Itemize
-...autonomiczność..., problemy z
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color red
+problemy z
 \begin_inset space ~
 \end_inset
 
@@ -490,17 +494,22 @@ podejmowaniem i
 przekazywanie decyzji
 \end_layout
 
+\begin_layout Standard
+Agent:
+\end_layout
+
 \begin_layout Itemize
-ciche założenie czasu globalnego.
- niespójności w
+
+\strikeout on
+autodetekcja zasobów
+\strikeout default
+, 
+\color red
+wymagany każdy plugin w
 \begin_inset space ~
 \end_inset
 
-pomiarach
-\end_layout
-
-\begin_layout Standard
-Agent:
+agencie
 \end_layout
 
 \begin_layout Itemize
@@ -512,11 +521,11 @@ malutkim rdzeniem,
 \end_layout
 
 \begin_layout Itemize
-wielowątkowe przetwarzanie zdarzeniowe,
+automatyczne ładowanie pluginów,
 \end_layout
 
 \begin_layout Itemize
-możliwa rekonfiguracja w
+rekonfiguracja w
 \begin_inset space ~
 \end_inset
 
@@ -541,7 +550,7 @@ System:
 identyczne agenty
 \strikeout default
 , 
-\color green
+\color red
 trudne aktualizacje i
 \begin_inset space ~
 \end_inset
@@ -554,11 +563,20 @@ zmiany
 \strikeout on
 połączone
 \strikeout default
-..., ręczna konfiguracja każdego węzła
+..., 
+\color red
+ręczna konfiguracja każdego węzła
 \end_layout
 
 \begin_layout Itemize
-...autonomiczność..., problemy z
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color red
+problemy z
 \begin_inset space ~
 \end_inset
 
@@ -569,33 +587,44 @@ podejmowaniem i
 przekazywanie decyzji
 \end_layout
 
-\begin_layout Itemize
-ciche założenie czasu globalnego.
- niespójności w
-\begin_inset space ~
-\end_inset
-
-pomiarach
-\end_layout
-
 \begin_layout Standard
 Agent:
 \end_layout
 
 \begin_layout Itemize
+
+\strikeout on
 autodetekcja zasobów
+\strikeout default
+, 
+\color red
+wymagany każdy plugin w
+\begin_inset space ~
+\end_inset
+
+agencie
 \end_layout
 
 \begin_layout Itemize
-budowa modułowa..., aktualizacja --- na każdym węźle ręcznie
+
+\strikeout on
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem
+\strikeout default
+, 
+\color red
+problematyczne dostarczanie pluginów
 \end_layout
 
 \begin_layout Itemize
-wielowątkowe przetwarzanie zdarzeniowe,
+automatyczne ładowanie pluginów,
 \end_layout
 
 \begin_layout Itemize
-możliwa rekonfiguracja w
+rekonfiguracja w
 \begin_inset space ~
 \end_inset
 
@@ -620,7 +649,7 @@ System:
 identyczne agenty
 \strikeout default
 , 
-\color green
+\color red
 trudne aktualizacje i
 \begin_inset space ~
 \end_inset
@@ -633,11 +662,20 @@ zmiany
 \strikeout on
 połączone
 \strikeout default
-..., ręczna konfiguracja każdego węzła
+..., 
+\color red
+ręczna konfiguracja każdego węzła
 \end_layout
 
 \begin_layout Itemize
-...autonomiczność..., problemy z
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color red
+problemy z
 \begin_inset space ~
 \end_inset
 
@@ -648,13 +686,103 @@ podejmowaniem i
 przekazywanie decyzji
 \end_layout
 
+\begin_layout Standard
+Agent:
+\end_layout
+
 \begin_layout Itemize
-ciche założenie czasu globalnego.
- niespójności w
+
+\strikeout on
+autodetekcja zasobów
+\strikeout default
+, 
+\color red
+wymagany każdy plugin w
 \begin_inset space ~
 \end_inset
 
-pomiarach
+agencie
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem
+\strikeout default
+, 
+\color red
+problematyczne dostarczanie pluginów
+\end_layout
+
+\begin_layout Itemize
+automatyczne ładowanie pluginów,
+\end_layout
+
+\begin_layout Itemize
+rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color red
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., 
+\color red
+ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color red
+problemy z
+\begin_inset space ~
+\end_inset
+
+podejmowaniem i
+\begin_inset space ~
+\end_inset
+
+przekazywanie decyzji
 \end_layout
 
 \begin_layout Standard
@@ -662,23 +790,517 @@ Agent:
 \end_layout
 
 \begin_layout Itemize
+
+\strikeout on
 autodetekcja zasobów
+\strikeout default
+, 
+\color red
+wymagany każdy plugin w
+\begin_inset space ~
+\end_inset
+
+agencie
 \end_layout
 
 \begin_layout Itemize
-budowa modułowa..., aktualizacja --- na każdym węźle ręcznie
+
+\strikeout on
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem
+\strikeout default
+, 
+\color red
+problematyczne dostarczanie pluginów
 \end_layout
 
 \begin_layout Itemize
-wielowątkowe przetwarzanie zdarzeniowe,
+
+\strikeout on
+automatyczne ładowanie pluginów
+\strikeout default
+, 
+\color red
+muszą być dostarczone do agenta
 \end_layout
 
 \begin_layout Itemize
-możliwa rekonfiguracja w
+rekonfiguracja w
 \begin_inset space ~
 \end_inset
 
 trakcie pracy (niemal dowolna).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Stan zastany - problemy
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color red
+trudne aktualizacje i
+\begin_inset space ~
+\end_inset
+
+zmiany
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., 
+\color red
+ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color red
+problemy z
+\begin_inset space ~
+\end_inset
+
+podejmowaniem i
+\begin_inset space ~
+\end_inset
+
+przekazywanie decyzji
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+autodetekcja zasobów
+\strikeout default
+, 
+\color red
+wymagany każdy plugin w
+\begin_inset space ~
+\end_inset
+
+agencie
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem
+\strikeout default
+, 
+\color red
+problematyczne dostarczanie pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+automatyczne ładowanie pluginów
+\strikeout default
+, 
+\color red
+muszą być dostarczone do agenta
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy
+\strikeout default
+, 
+\color red
+brak ogólnego obrazu systemu monitorowania i
+\begin_inset space ~
+\end_inset
+
+monitorowanego
+\color inherit
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Problemy i rozwiązania
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., 
+\color red
+ręczna konfiguracja każdego węzła
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color red
+problemy z
+\begin_inset space ~
+\end_inset
+
+podejmowaniem i
+\begin_inset space ~
+\end_inset
+
+przekazywanie decyzji
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+autodetekcja zasobów
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów,
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+automatyczne ładowanie pluginów
+\strikeout default
+,
+\color blue
+ ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy
+\strikeout default
+, 
+\color red
+brak ogólnego obrazu systemu monitorowania i
+\begin_inset space ~
+\end_inset
+
+monitorowanego
+\color inherit
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Problemy i rozwiązania
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., 
+\color magenta
+rejestr agentów w
+\begin_inset space ~
+\end_inset
+
+systemie monitorowania
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color magenta
+rejestr agentów w
+\begin_inset space ~
+\end_inset
+
+systemie monitorowania
+\color blue
+,
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+autodetekcja zasobów
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów,
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+automatyczne ładowanie pluginów
+\strikeout default
+,
+\color blue
+ ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy
+\strikeout default
+, 
+\color red
+brak ogólnego obrazu systemu monitorowania i
+\begin_inset space ~
+\end_inset
+
+monitorowanego
+\color inherit
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Problemy i rozwiązania
+\end_layout
+
+\begin_layout Standard
+System:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+identyczne agenty
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+połączone
+\strikeout default
+..., 
+\color magenta
+rejestr agentów w
+\begin_inset space ~
+\end_inset
+
+systemie monitorowania
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+...autonomiczność...
+\strikeout default
+.
+ 
+\color magenta
+rejestr agentów w
+\begin_inset space ~
+\end_inset
+
+systemie monitorowania
+\color blue
+,
+\end_layout
+
+\begin_layout Standard
+Agent:
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+autodetekcja zasobów
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów,
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+budowa modułowa z
+\begin_inset space ~
+\end_inset
+
+malutkim rdzeniem
+\strikeout default
+, 
+\color blue
+ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+automatyczne ładowanie pluginów
+\strikeout default
+,
+\color blue
+ ogólnodostępne repozytorium pluginów
+\end_layout
+
+\begin_layout Itemize
+
+\strikeout on
+rekonfiguracja w
+\begin_inset space ~
+\end_inset
+
+trakcie pracy
+\strikeout default
+, 
+\color green
+graf reprezentujący system ((zasoby+usługi)+zależności)
+\color inherit
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Rozwiązania
+\end_layout
+
+\begin_layout Standard
+Repozytorium pluginów:
+\end_layout
+
+\begin_layout Standard
+rozwiązywania zależności między pluginami
+\end_layout
+
+\begin_layout Standard
+wspomaganie aktualizacji
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout EndFrame
